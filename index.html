@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8' />
+	<meta name='viewport' content='width=device-width'>
+	<title>Robert Marll</title>
+	<link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel='stylesheet' type='text/css' media='screen' href='./css/index.css' />
+	<script type='text/javascript'>
+		function zoom(evt) {
+			console.log(evt)
+			window.location.href = 'https://zoom.us/j/96554409665?pwd=OGo4T1ZIdHpGMVFkdkZ2UXc0ZU05dz09';
+		}
+		function googlemeet(evt) {
+			console.log(evt)
+			window.location.href = 'http://meet.google.com/rxj-toeh-bpj';
+		}
+	</script>
+	<script type='text/javascript'>
+		<!--
+		// Email obfuscator script 2.1 by Tim Williams, University of Arizona
+		// Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+		// This code is freeware provided these four comment lines remain intact
+		// A wizard to generate this code is at http://www.jottings.com/obfuscator/
+		{ coded = 'w2OmJ@w2OmJDGgvJO.s2d'
+		coded2 = '+tNWQx77aQxa'
+		key = 'XqfigltakN64mR9HEMVpCoW1TvF7GK03cdjZPherIB25bnLQAYzx8sDSyUwJOu'
+		shift=coded.length
+		link=''
+		for (i=0; i<coded.length; i++) {
+		  if (key.indexOf(coded.charAt(i))==-1) {
+		    ltr = coded.charAt(i)
+		    link += (ltr)
+		  }
+		  else {     
+		    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+		    link += (key.charAt(ltr))
+		  }
+		}
+
+		function email(evt) {
+			console.log(evt)
+			window.location.href = 'mailto:'+link;
+		}
+	</script>
+</head>
+<body>
+
+<header>
+	<h2 id='name'>Horse Danger</h2>
+</header>
+
+<div id='contact'>
+	<img id='email' class='icon' src='./img/mail.png' title='Email' alt='Mail icon' onclick='email()'>
+	<a href='http://horsedanger.com/youtube'>
+		<img id='youtube' class='icon' src='./img/youtube.png' title='Youtube' alt='Youtube icon'>
+	</a>
+	<a href='http://horsedanger.com/discord'>
+		<img id='discord' class='icon' src='./img/messenger.png' title='Discord' alt='Discord icon'>
+	</a>
+	<span class='nobreak'>
+		<a href='http://horsedanger.com/twitter'>
+			<img id='twitter' class='icon' src='./img/twit.png' title='Twitter' alt='Twitter icon'>
+		</a>
+		<a href='http://horsedanger.com/instagram'> 
+			<img id='instagram' class='icon' src='./img/insta.png' title='Instagram' alt='Instagram icon'>
+		</a>
+	</span>
+</div>
+
+</body>
+</html>
